@@ -40,6 +40,7 @@ libraryDependencies ++= Seq(
   "org.http4s"                     %% "http4s-dsl"           % http4sVersion,
   "org.http4s"                     %% "http4s-blaze-client"  % http4sVersion,
   "org.http4s"                     %% "http4s-circe"         % http4sVersion,
+  "com.github.cb372"               %% "scalacache-caffeine"  % "0.24.2",
 
   compilerPlugin("org.spire-math"  %% "kind-projector"       % "0.9.4"),
   compilerPlugin("org.scalamacros" %% "paradise"             % "2.1.1" cross CrossVersion.full)
