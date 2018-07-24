@@ -42,4 +42,6 @@ object Currency {
   implicit val encoder: Encoder[Currency] =
     Encoder.instance[Currency] { show.show _ andThen Json.fromString }
 
+  val supportedCurrencies: Set[Currency] = Set(AUD, CAD, CHF, EUR, GBP, NZD, JPY, SGD, USD)
+
 }
